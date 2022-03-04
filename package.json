@@ -1,0 +1,29 @@
+{
+  "name": "study_expressjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --inspect index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TrinhLeLongDuc/NodeJS.git"
+  },
+  "keywords": [
+    "ExpressJS"
+  ],
+  "author": "LongDuc",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TrinhLeLongDuc/NodeJS/issues"
+  },
+  "homepage": "https://github.com/TrinhLeLongDuc/NodeJS#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
