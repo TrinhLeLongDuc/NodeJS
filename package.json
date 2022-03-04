@@ -2,10 +2,13 @@
   "name": "study_expressjs",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "start": "nodemon --inspect index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon --inspect src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass src/resources/scss/app.scss  src/public/css/app.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css",
+    "postinstall": "patch-package"
   },
   "repository": {
     "type": "git",
@@ -21,9 +24,12 @@
   },
   "homepage": "https://github.com/TrinhLeLongDuc/NodeJS#readme",
   "dependencies": {
-    "express": "^4.17.3"
+    "express": "^4.17.3",
+    "express-handlebars": "^5.1.0"
   },
   "devDependencies": {
+    "morgan": "^1.10.0",
+    "node-sass": "^7.0.1",
     "nodemon": "^2.0.15"
   }
 }
